@@ -8,15 +8,18 @@
 - [Software Evolution Law](#software-evolution-law)
   - [Classification of softwares](#classification-of-softwares)
     - [E-Type software evolution](#e-type-software-evolution)
-- [SDLC](#sdlc)
 - [Characteristics of good software](#characteristics-of-good-software)
-- [SDLC](#sdlc-1)
+- [SDLC](#sdlc)
 - [Process Models](#process-models)
   - [Waterfall Model](#waterfall-model)
-  - [Iterative Model](#iterative-model)
+  - [Iterative/Incremental Model](#iterativeincremental-model)
   - [Spiral Model](#spiral-model)
+  - [RAD](#rad)
   - [V-Model](#v-model)
   - [Big Bang Model](#big-bang-model)
+- [Some differences between models](#some-differences-between-models)
+  - [Iterative vs Spiral](#iterative-vs-spiral)
+  - [RAD vs Iterative](#rad-vs-iterative)
 - [Project Management](#project-management)
   - [Risks](#risks)
   - [Risk Management Process](#risk-management-process)
@@ -27,6 +30,11 @@
     - [PERT Chart](#pert-chart)
     - [Resource Histogram](#resource-histogram)
   - [Critical Path Analysis](#critical-path-analysis)
+- [Agile](#agile)
+  - [Agile Values](#agile-values)
+  - [Agile Principles](#agile-principles)
+  - [Agile Software Development](#agile-software-development)
+- [Scrum](#scrum)
 - [Crash-Review](#crash-review)
 
 ## What is software engineering?
@@ -106,7 +114,6 @@ Lehman has given eight laws for E-Type software evolution -
 - Self-regulation - E-type system evolution processes are self-regulating with the distribution of product and process measures close to normal.
 - Organizational stability - The average effective global activity rate in an evolving E-type system is invariant over the lifetime of the product.
 
-## SDLC
 
 
 ## Characteristics of good software
@@ -149,7 +156,7 @@ Steps: [Key Processes in Software Engineering](#key-processes-in-software-engine
 
 ![1](static/images/1.png)
 
-### Iterative Model
+### Iterative/Incremental Model
 
 This model leads the software development process in iterations. It projects the process of development in cyclic manner repeating every step after every cycle of SDLC process.
 
@@ -166,6 +173,10 @@ Spiral model is a combination of both, iterative model and one of the SDLC model
 
 ![3](static/images/3.png)
 
+### RAD
+
+![10](static/images/10.png)
+
 ### V-Model
 
 The major drawback of waterfall model is we move to the next stage only when the previous one is finished and there was no chance to go back if something is found wrong in later stages. V-Model provides means of testing of software at each stage in reverse manner.
@@ -179,6 +190,24 @@ This model is the simplest model in its form. It requires little planning, lots 
 ![5](static/images/5.png)
 
 For this model, very small amount of planning is required. It does not follow any process, or at times the customer is not sure about the requirements and future needs. So the input requirements are arbitrary.
+
+## Some differences between models
+
+### Iterative vs Spiral
+
+![11](static/images/11.png)
+
+### RAD vs Iterative
+
+**Iterative waterfall model** <br/>
+All product functionalities are developed together.
+It does not facilitate accommodating requirement change requests.
+The uses of the iterative waterfall model lead to the production of good documentation.
+Also, the developed software usually has better quality and reliability than that developed using RAD.
+
+**Rapid Application Development model:** <br/>
+Product functionalities are developed incrementally through heavy code and design reuse.
+Customer feedback is obtained on the developed prototype after each iteration, based on this prototype is redefined.
 
 ## Project Management
 
@@ -246,6 +275,62 @@ This tools is useful in recognizing interdependent tasks in the project. It also
 The events are arranged according to their earliest possible start time. Path between start and end node is critical path which cannot be further reduced and all events require to be executed in same order.
 
 
+## Agile
+
+Agile is the ability to create and respond to change. It is a way of dealing with, and ultimately succeeding in, an uncertain and turbulent environment.
+
+The authors of the Agile Manifesto chose “Agile” as the label for this whole idea because that word `represented the adaptiveness and response to change which was so important to their approach`.
+
+It’s really about thinking through how you can understand what’s going on in the environment that you’re in today, identify what uncertainty you’re facing, and figure out how you can adapt to that as you go along.
+
+![13](static/images/13.jpg)
+
+
+### Agile Values
+
+1. Individuals and Interactions Over Processes and Tools
+   1. Valuing people more highly than processes or tools is easy to understand because it is the people who respond to business needs and drive the development process. If the process or the tools drive development, the team is less responsive to change and less likely to meet customer needs. Communication is an example of the difference between valuing individuals versus process. In the case of individuals, communication is fluid and happens when a need arises. In the case of process, communication is scheduled and requires specific content.
+2. Working Software Over Comprehensive Documentation
+   1. Historically, enormous amounts of time were spent on documenting the product for development and ultimate delivery. Technical specifications, technical requirements, technical prospectus, interface design documents, test plans, documentation plans, and approvals required for each. The list was extensive and was a cause for the long delays in development. Agile does not eliminate documentation, but it streamlines it in a form that gives the developer what is needed to do the work without getting bogged down in minutiae. Agile documents requirements as user stories, which are sufficient for a software developer to begin the task of building a new function.
+   The Agile Manifesto values documentation, but it values working software more.
+3. Customer Collaboration Over Contract Negotiation
+   1. Negotiation is the period when the customer and the product manager work out the details of a delivery, with points along the way where the details may be renegotiated. Collaboration is a different creature entirely. With development models such as Waterfall, customers negotiate the requirements for the product, often in great detail, prior to any work starting. This meant the customer was involved in the process of development before development began and after it was completed, but not during the process. The Agile Manifesto describes a customer who is engaged and collaborates throughout the development process, making. This makes it far easier for development to meet their needs of the customer. Agile methods may include the customer at intervals for periodic demos, but a project could just as easily have an end-user as a daily part of the team and attending all meetings, ensuring the product meets the business needs of the customer.
+4. Responding to Change Over Following a Plan
+   1. Traditional software development regarded change as an expense, so it was to be avoided. The intention was to develop detailed, elaborate plans, with a defined set of features and with everything, generally, having as high a priority as everything else, and with a large number of many dependencies on delivering in a certain order so that the team can work on the next piece of the puzzle.
+
+### Agile Principles
+
+The twelve principles of agile development include:
+
+1. **Customer satisfaction through early and continuous software delivery** – Customers are happier when they receive working software at regular intervals, rather than waiting extended periods of time between releases.
+1. **Accommodate changing requirements throughout the development process** – The ability to avoid delays when a requirement or feature request changes.
+1. **Frequent delivery of working software** – Scrum accommodates this principle since the team operates in software sprints or iterations that ensure regular delivery of working software.
+2. **Collaboration between the business stakeholders and developers throughout the project** – Better decisions are made when the business and technical team are aligned.
+3. **Support, trust, and motivate the people involved** – Motivated teams are more likely to deliver their best work than unhappy teams.
+4. **Enable face-to-face interactions** – Communication is more successful when development teams are co-located.
+5. **Working software is the primary measure of progress** – Delivering functional software to the customer is the ultimate factor that measures progress.
+6. **Agile processes to support a consistent development pace** – Teams establish a repeatable and maintainable speed at which they can deliver working software, and they repeat it with each release.
+7. **Attention to technical detail and design enhances agility** – The right skills and good design ensures the team can maintain the pace, constantly improve the product, and sustain change.
+8. **Simplicity** – Develop just enough to get the job done for right now.
+9. **Self-organizing teams encourage great architectures, requirements, and designs** – Skilled and motivated team members who have decision-making power, take ownership, communicate regularly with other team members, and share ideas that deliver quality products.
+1. **Regular reflections on how to become more effective** – Self-improvement, process improvement, advancing skills, and techniques help team members work more efficiently.
+  
+The intention of Agile is to align development with business needs, and the success of Agile is apparent. Agile projects are customer focused and encourage customer guidance and participation. As a result, Agile has grown to be an overarching view of software development throughout the software industry and an industry all by itself.
+
+### Agile Software Development
+
+Agile software development is more than frameworks such as Scrum, Extreme Programming, or Feature-Driven Development (FDD).
+
+Agile software development is more than practices such as pair programming, test-driven development, stand-ups, planning sessions, and sprints.
+
+
+## Scrum
+
+> Framework for Agile
+
+Scrum is simple.  It is the opposite of a big collection of interwoven mandatory components. Scrum is not a methodology. Scrum implements the scientific method of empiricism. Scrum replaces a programmed algorithmic approach with a heuristic one, with respect for people and self-organization to deal with unpredictability and solving complex problems.  The below graphic represents Scrum in Action as described by Ken Schwaber and Jeff Sutherland in their book Software in 30 Days taking us from planning through software delivery.  
+
+![15](static/images/15.png)
 
 ## Crash-Review
 - What is Software Engineering?
