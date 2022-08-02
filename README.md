@@ -36,6 +36,7 @@
   - [Agile Software Development](#agile-software-development)
 - [Scrum](#scrum)
 - [Crash-Review](#crash-review)
+- [Must Read Book(s)](#must-read-books)
 
 ## What is software engineering?
 
@@ -363,6 +364,12 @@ Scrum is simple.  It is the opposite of a big collection of interwoven mandatory
   - Security Testing
   - Code Coverage
   - Test-Driven Development (TDD)
+
+
+## Must Read Book(s)
+
+- [PMBOK](static/books/PMBOK-7th-Edition.pdf)
+
 
 <!-- ## Continue here -->
 <!-- https://www.tutorialspoint.com/software_engineering/software_requirements.htm -->
